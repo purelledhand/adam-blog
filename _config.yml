@@ -22,7 +22,7 @@ facebook: purelledhand # Add your Facebook handle
 mailchimp: # Add your MailChimp form identifier.
 
 # Disqus
-discus_identifier: mr-brown # Add your discus identifier
+discus_identifier: purelledhand # Add your discus identifier
 
 # Tracker
 analytics: # Google Analytics
