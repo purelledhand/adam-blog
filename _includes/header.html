@@ -8,10 +8,17 @@
         <span class="menu-icon-close"><i class="fa fa-times" aria-hidden="true"></i></span>
         <ul>
           <li><a href="{{site.baseurl}}/">Bloom LOG</a></li>
+
           {% for item in (0..site.tags.size) %}{% unless forloop.last %}
-            {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
-            <li ><a href="{{site.baseurl}}/tags/#{{ this_word | cgi_escape }}">{{ this_word }} <span>({{ site.tags[this_word].size }})</span></a></li>
+          {% capture this_word %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
+          <li><a href="{{site.baseurl}}/tags#{{tag}}">{{ this_word }}</a></li>
           {% endunless %}{% endfor %}
+
+          <!--{% for item in (0..site.tags.size) %}{% unless forloop.last %}
+            {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
+            <li ><a href="{{site.baseurl}}/tags#{{tag}}">{{ tag }} <span>({{ site.tags[this_word].size }})</span></a></li>
+          {% endunless %}{% endfor %}-->
+
           <li><a href="{{site.baseurl}}/about">About</a></li>
         </ul>
       </nav>
