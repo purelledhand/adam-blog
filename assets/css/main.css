@@ -1,14 +1,15 @@
+* { font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif' !important ; }
+
 .highlight {
-  background-color: #faf9f9;
+  background-color: #525252;
   -webkit-border-radius: 3px;
           border-radius: 3px;
   margin: 0;
 }
 
 .highlighter-rouge {
-  color: #87314e;
-  font-weight: 400;
-  border: 1px solid #607D8B;
+  color: #fff;
+  font-weight: 100;
   -webkit-border-radius: 3px;
           border-radius: 3px;
   padding: 0.1rem 0.5rem;
