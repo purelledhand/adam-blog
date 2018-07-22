@@ -167,7 +167,7 @@ rbp+8 값의 인스트럭트를 따라가보면 도중에 아래와 같은 내�
 이렇게 rax에 main함수의 주소인 0x4006fc가 들어있는 것을 확인할 수 있었다.
 정리해보면 함수가 끝난 후 main을 호출하고 exit를 호출하는 로직이다.
 
-<img src="../assets/img/rootme/system4/stack.jpg" alt="stack" style="width: 400px;"/>
+<img src="{{site.baseurl}}/assets/img/rootme/system4/stack.jpg" alt="stack" style="width: 400px;"/>
 
 그래서 main을 호출 한 후 return addr이 mov edi, eax가 된 상황이다. 그 이후에는 exit를 호출한 후 main으로 복귀할 것이다.
 
