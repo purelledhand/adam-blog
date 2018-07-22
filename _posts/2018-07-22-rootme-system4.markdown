@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Root-me] ELF x64 stack buffer over flow - basic
+title: Root-me) ELF x64 stack buffer over flow - basic
 date: 2018-07-22 22:41:20 +0900
 description: # Add post description (optional)
 img: post-2.jpg # Add image post (optional)
