@@ -1,10 +1,9 @@
-* {  }
-
 .highlight {
   background-color: #525252;
   -webkit-border-radius: 3px;
           border-radius: 3px;
   margin: 0;
+  font-family: 'Spoqa Han Sans', 'Sans-serif' !important ;
 }
 
 .highlighter-rouge {
@@ -412,7 +411,7 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: 'Spoqa Han Sans', 'Sans-serif' !important ;
+  font-family: monospace, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -467,7 +466,7 @@ strong {
 code,
 kbd,
 samp {
-  font-family: 'Spoqa Han Sans', 'Sans-serif' !important ;
+  font-family: monospace, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
