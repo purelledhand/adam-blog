@@ -22,4 +22,4 @@ C# 디컴파일러를 이용해서 보니까 valider 버튼 클릭 이벤트 함
     }
 
 
-<img src="{{site.baseurl}}/assets/img/rootme/cracking/pedotnetzero.png" alt="flow" style="width: 500px; margin: 0 auto;"/>
+<img src="{{site.baseurl}}/assets/img/rootme/cracking/pedotnetzero.PNG" alt="flow" style="width: 500px; margin: 0 auto;"/>
