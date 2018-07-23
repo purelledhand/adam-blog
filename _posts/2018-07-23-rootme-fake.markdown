@@ -3,7 +3,7 @@ layout: post
 title: Root-me) ELF - Fake instruction
 date: 2018-07-23 08:49:20 +0900
 description: # Add post description (optional)
-img: rootme/c++zero/ptr.png # Add image post (optional)
+img: post-2.jpg # Add image post (optional)
 tags: [CTF, Root-me]
 author: purelledhand # Add name author (optional)
 ---
