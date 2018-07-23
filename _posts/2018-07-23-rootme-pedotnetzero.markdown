@@ -3,7 +3,7 @@ layout: post
 title: Root-me) PE .NET - 0 Protection
 date: 2018-07-23 10:32:20 +0900
 description: # Add post description (optional)
-img: # Add image post (optional)
+img: assets/img/rootme/cracking/pedotnetzero.PNG # Add image post (optional)
 tags: [CTF, Root-me]
 author: purelledhand # Add name author (optional)
 ---
