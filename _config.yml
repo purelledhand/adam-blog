@@ -11,7 +11,7 @@ url: "https://purelledhand.github.io" # the base hostname & protocol for your si
 # Author settings
 author: Purelledhand # add your name
 author-pic: face.jpg
-about-author: 의미만 있다면
+about-author: 잡지같은 블로그
 
 # Contact links
 email: purelledhand@gmail.com  # Add your Email address
@@ -21,7 +21,7 @@ facebook: purelledhand # Add your Facebook handle
 # Newsletter
 mailchimp: # Add your MailChimp form identifier.
 
-# Disqus
+# Disqus 
 discus_identifier: purelledhand # Add your discus identifier
 
 # Tracker
