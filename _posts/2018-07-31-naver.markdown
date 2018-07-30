@@ -3,7 +3,7 @@ layout: post
 title: NAVER D2 Partners Day ) 터닝포인트가 될 줄이야
 date: 2018-07-31 04:42:20 +0900
 description: # Add post description (optional)
-img: issue/1.jpg # Add image post (optional)
+img: issue/naver/1.jpg # Add image post (optional)
 tags: [주간 릴리즈]
 author: # Add name author (optional)
 ---
