@@ -12,7 +12,7 @@
           <li><a href="{{site.baseurl}}/">Bloom LOG</a></li>
           {% for item in (0..site.tags.size) %}{% unless forloop.last %}
             {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
-            <li ><a href="{{site.baseurl}}/tags#{{ this_word | cgi_escape }}" class="tag">{{ this_word }} <span>({{ site.tags[this_word].size }})</span></a></li>
+            <li ><a href="{{site.baseurl}}/tags#{{ this_word | cgi_escape }}" class="tag">{{ this_word }} <span style="font-size : 0.7em; color : #87314e;">| {{ site.tags[this_word].size }}개의 포스팅</span></a></li>
           {% endunless %}{% endfor %}
           <li><a href="{{site.baseurl}}/about">About</a></li>
         </ul>
