@@ -43,37 +43,38 @@ IDA로 열어봤을 때,
     Count 151993
 
 ## exploit
+```{.python}
+from pwn import *
+import string
+import operator
 
-    from pwn import *
-    import string
-    import operator
+password = ""
+inscount = dict()
+FLAG=True
+before_cnt = 151993
 
-    password = ""
-    inscount = dict()
-    FLAG=True
-    before_cnt = 151993
+while FLAG:
+    inscount = {}
 
-    while FLAG:
-        inscount = {}
+    for i in range(len(string.printable)):
+        p = process(["./pin","-t" ,"source/tools/MyPinTool/obj-intel64/MyPinTool.so", "--", "../../week5/crackme"])
+        p.sendline(password + string.printable[i])
+        res = p.recv()
+        cut = p.recvuntil('Count [')
+        if "FAILED" not in cut:
+            print "PASSWORD : " + password + string.printable[i]
+            FLAG = False
+            break;
+        cnt = p.recvall()[:-2]
+        p.close()
 
-        for i in range(len(string.printable)):
-            p = process(["./pin","-t" ,"source/tools/MyPinTool/obj-intel64/MyPinTool.so", "--", "../../week5/crackme"])
-            p.sendline(password + string.printable[i])
-            res = p.recv()
-            cut = p.recvuntil('Count [')
-            if "FAILED" not in cut:
-                print "PASSWORD : " + password + string.printable[i]
-                FLAG = False
-                break;
-            cnt = p.recvall()[:-2]
-            p.close()
+        if cnt > before_cnt :
+            inscount[password + string.printable[i]] = cnt
+            before_cnt = cnt
 
-            if cnt > before_cnt :
-                inscount[password + string.printable[i]] = cnt
-                before_cnt = cnt
-
-        password = sorted(inscount.items(), key=operator.itemgetter(1), reverse=True)[0][0]
-        before_cnt = sorted(inscount.items(), key=operator.itemgetter(1), reverse=True)[0][1]
+    password = sorted(inscount.items(), key=operator.itemgetter(1), reverse=True)[0][0]
+    before_cnt = sorted(inscount.items(), key=operator.itemgetter(1), reverse=True)[0][1]
+```
 
 ## FLAG
     purelledhand@purelledhand:~/tools/pin-3.6$ python ex.py
